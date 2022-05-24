@@ -1,0 +1,14 @@
+{
+    "tuotteet":[
+        {
+            "id": "111",
+            "name": "Maila",
+            "email": "123"
+        },
+        {
+            "id": "112",
+            "name": "Kypärä",
+            "email": "123"
+        }
+    ]
+}
