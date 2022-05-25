@@ -10,7 +10,7 @@ const App = () => {
   }, []);
 
   const fetchData = async () => {
-    await fetch("https://localhost:3000/tuotteet")
+    await fetch("http://localhost:4000/tuotteet")
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch((err) => {
@@ -19,7 +19,7 @@ const App = () => {
   };
 
   const onAdd = async (name, email) => {
-    await fetch("https://localhost:3000/tuotteet", {
+    await fetch("http://localhost:4000/tuotteet", {
       method: "POST",
       body: JSON.stringify({
         name: name,
@@ -45,7 +45,7 @@ const App = () => {
   };
 
   const onDelete = async (id) => {
-    await fetch(`"https://localhost:3000/tuotteet"${id}`, {
+    await fetch(`"http://localhost:4000/tuotteet"${id}`, {
       method: "DELETE",
     })
       .then((res) => {
